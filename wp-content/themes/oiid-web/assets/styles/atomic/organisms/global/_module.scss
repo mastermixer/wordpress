@@ -1,9 +1,0 @@
-.module {
-  position: relative;
-  @extend %clearfix;
-  padding: rhythm(4) 0;
-
-  @include breakpoint($medium) {
-    padding: rhythm(5) 0 rhythm(6);
-  }
-}
