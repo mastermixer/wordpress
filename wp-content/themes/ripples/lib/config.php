@@ -63,7 +63,7 @@ function display_sidebar() {
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-//add_image_size( 'ripples-thumb-600', 552, 552, true );
+add_image_size( 'portrait-320', 320, 460, true );
 
 /*
 to add more sizes, simply copy a line from above

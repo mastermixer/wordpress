@@ -1,5 +1,5 @@
 .what-is-item {
-  padding: rhythm(10) 0;
+  padding: rhythm(5) 0;
 
   /*Pull image out to the sides on mobile*/
   .what-is-image {
@@ -16,9 +16,15 @@
     }
   }
 
+  .what-is-text{
+    text-align: center;
+  }
+
   @include breakpoint($small) {
+    padding: rhythm(10) 0;
     .what-is-text {
       @include span(6);
+      text-align: left;
     }
     .what-is-image {
       @include span(last 6);
