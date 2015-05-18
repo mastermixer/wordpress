@@ -5,6 +5,12 @@
 .header {
 	background-color: black;
 	height: 100px;
+	border-bottom: 1px solid #666;
+
+	.inner-container {
+		position: relative;
+		height: 100px;
+	}
 
 	#logo {
 		position: absolute;
@@ -22,16 +28,18 @@
 		bottom: 0;
 		ul {
 			li {
-				background-color: blue;
+				background: linear-gradient(90deg,#40bfe0,#d11186);
 				display: block;
 				padding-bottom: 4px;
 				a {
-					padding: 20px;
+					padding: 20px 10px;
 					display: block;
 					background-color: black;
 					text-decoration: none;
 					text-transform: uppercase;
 					color: white;
+					font-weight: 700;
+					font-style: italic;
 				}
 			}
 		}
