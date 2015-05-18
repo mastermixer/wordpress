@@ -1,0 +1,20 @@
+.what-is-item{
+  padding: rhythm(6) 0;
+  .what-is-text{
+   @include span(3 of 6);
+  }
+
+  .what-is-image{
+    @include span(last 3 of 6);
+  }
+
+  &:nth-child(2n+2){
+    .what-is-text{
+      @include span(last 3 of 6);
+    }
+
+    .what-is-image{
+      @include span(3 of 6);
+    }
+  }
+}

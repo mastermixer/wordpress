@@ -1,0 +1,6 @@
+.front-page-section{
+  padding:rhythm(10) 0;
+  &:nth-child(2n+2){
+    background-color: #F7F7F7;
+  }
+}
