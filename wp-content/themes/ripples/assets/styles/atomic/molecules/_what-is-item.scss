@@ -1,20 +1,56 @@
-.what-is-item{
-  padding: rhythm(6) 0;
-  .what-is-text{
-   @include span(3 of 6);
+.what-is-item {
+  padding: rhythm(10) 0;
+
+  /*Pull image out to the sides on mobile*/
+  .what-is-image {
+    margin-right: -50px;
+    img{
+      width:100%;
+    }
   }
 
-  .what-is-image{
-    @include span(last 3 of 6);
+  &:nth-child(2n+2) {
+    .what-is-image {
+      margin-left: -50px;
+      margin-right: 0;
+    }
   }
 
-  &:nth-child(2n+2){
-    .what-is-text{
-      @include span(last 3 of 6);
+  @include breakpoint($small) {
+    .what-is-text {
+      @include span(6);
+    }
+    .what-is-image {
+      @include span(last 6);
+      margin:0;
     }
 
-    .what-is-image{
-      @include span(3 of 6);
+    &:nth-child(2n+2) {
+      .what-is-text {
+        @include span(last 6);
+        text-align: right;
+      }
+      .what-is-image {
+        @include span(6);
+        margin:0;
+      }
+    }
+  }
+
+  .what-is-item-title {
+    text-transform: uppercase;
+    margin-bottom: rhythm(2, 32px);
+    @include adjust-font-size-to(32px);
+    @include breakpoint($small) {
+      @include adjust-font-size-to(36px);
+      margin-bottom: rhythm(2, 36px);
+    }
+  }
+
+  .what-is-item-text {
+    @include adjust-font-size-to(16px);
+    @include breakpoint($small) {
+      @include adjust-font-size-to(24px);
     }
   }
 }
