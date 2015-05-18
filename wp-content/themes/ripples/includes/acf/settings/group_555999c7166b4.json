@@ -5,7 +5,7 @@
         {
             "key": "field_555999d96650b",
             "label": "Background image",
-            "name": "background_image",
+            "name": "front_page_top_background_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -29,7 +29,7 @@
         {
             "key": "field_555999f56650c",
             "label": "Title",
-            "name": "title",
+            "name": "front_page_top_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -50,7 +50,7 @@
         {
             "key": "field_55599a046650d",
             "label": "Text",
-            "name": "text",
+            "name": "front_page_top_text",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -99,5 +99,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1431935915
+    "modified": 1431942241
 }
