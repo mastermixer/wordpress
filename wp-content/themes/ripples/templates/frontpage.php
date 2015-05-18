@@ -8,17 +8,8 @@
 <div class="page-top">
     <?php
     $frontPageTopImage = get_field('front_page_top_background_image'); ?>
-    <picture>
-        <source media="(min-width: 64em)"
-                src="<?php echo wp_get_attachment_image_src($frontPageTopImage, 'full')[0]; ?>">
-        <source media="(min-width: 37.5em)" src="<?php echo wp_get_attachment_image_src($frontPageTopImage)[0]; ?>">
-        <source src="<?php echo wp_get_attachment_image_src($frontPageTopImage)[0]; ?>">
-        <img src="<?php echo wp_get_attachment_image_src($frontPageTopImage)[0]; ?>"
-             alt="This picture loads on non-supporting browsers.">
-
-        <p>Accessible text.</p>
-    </picture>
-    <?php the_field('front_page_top_title'); ?>
+    <?php echo wp_get_attachment_image($frontPageTopImage); ?>
+    <h1><?php the_field('front_page_top_title'); ?></h1>
     <?php the_field('front_page_top_text'); ?>
 </div>
 

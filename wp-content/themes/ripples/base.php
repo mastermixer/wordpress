@@ -13,7 +13,7 @@ use MW\Ripples\Wrapper;
 	</div>
     <![endif]-->
     <?php inc('organism', 'header'); ?>
-    <div class="wrap container" role="document">
+
 		<?php include Wrapper\template_path(); ?>
 
 	    <?php if (Config\display_sidebar()) : ?>
@@ -21,7 +21,7 @@ use MW\Ripples\Wrapper;
 			<?php include Wrapper\sidebar_path(); ?>
 		</aside>
 		<?php endif; ?>
-    </div>
+
     <?php
         inc('organism', 'footer');
         wp_footer();
