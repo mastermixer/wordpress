@@ -40,8 +40,9 @@
                 <section class="front-page-section">
                     <div class="inner-container">
                         <div class="center-text">
-                            <h2><?php the_sub_field('video_title');?></h2>
-                            <?php the_sub_field('video_text');?>
+                            <h2 class="section-title"><?php the_sub_field('video_title');?></h2>
+
+                            <p class="section-intro"><?php the_sub_field('video_text', false, false);?></p>
                         </div>
                         <div class="video-container ratio-16-9">
                             <?php the_sub_field('video');?>
@@ -58,31 +59,34 @@
                 <section class="front-page-section">
                     <div class="inner-container">
                         <div class="center-text">
-                            <h2><?php the_sub_field('what_is_title');?></h2>
-                            <?php the_sub_field('what_is_text');?>
+                            <h2 class="section-title"><?php the_sub_field('what_is_title');?></h2>
+
+                            <p class="section-intro"><?php the_sub_field('what_is_text', false, false);?></p>
                         </div>
                         <?php if (have_rows('item')): ?>
-                            <?php while (have_rows('item')): the_row();
+                            <div class="items">
+                                <?php while (have_rows('item')): the_row();
 
-                                // vars
-                                $title = get_sub_field('title');
-                                $text = get_sub_field('text');
-                                $image = get_sub_field('image');
+                                    // vars
+                                    $title = get_sub_field('title');
+                                    $text = get_sub_field('text', false, false);
+                                    $image = get_sub_field('image');
 
-                                ?>
-                                <div class="what-is-item clearfix">
-                                    <div class="what-is-text">
-                                        <h3><?php echo $title; ?></h3>
-                                        <?php echo $text; ?>
+                                    ?>
+                                    <div class="what-is-item clearfix">
+                                        <div class="what-is-text">
+                                            <h3 class="what-is-item-title"><?php echo $title; ?></h3>
+
+                                            <p class="what-is-item-text"><?php echo $text; ?></p>
+                                        </div>
+                                        <div class="what-is-image">
+                                            <?php echo wp_get_attachment_image($image, 'full'); ?>
+                                        </div>
                                     </div>
-                                    <div class="what-is-image">
-                                        <?php echo wp_get_attachment_image($image); ?>
-                                    </div>
-                                </div>
 
 
-                            <?php endwhile; ?>
-
+                                <?php endwhile; ?>
+                            </div>
                         <?php endif;?>
                     </div>
                 </section>
@@ -96,15 +100,16 @@
                 <section class="front-page-section">
                     <div class="inner-container">
                         <div class="center-text">
-                            <h2><?php the_sub_field('title');?></h2>
-                            <?php the_sub_field('text');?>
+                            <h2 class="section-title"><?php the_sub_field('title');?></h2>
+
+                            <p class="section-intro"><?php the_sub_field('text', false, false);?></p>
                         </div>
                         <?php if (have_rows('share_buttons')): ?>
                             <div class="share-buttons">
                                 <?php while (have_rows('share_buttons')): the_row(); ?>
                                     <?php $buttonImage = get_sub_field('button_image'); ?>
                                     <a href="<?php the_sub_field('url'); ?>">
-                                        <?php echo wp_get_attachment_image($buttonImage); ?>
+                                        <?php echo wp_get_attachment_image($buttonImage, 'full'); ?>
                                     </a>
                                 <?php endwhile; ?>
                             </div>
@@ -123,8 +128,9 @@
                 <section class="front-page-section">
                     <div class="inner-container">
                         <div class="center-text">
-                            <h2><?php the_sub_field('connected_title');?></h2>
-                            <?php the_sub_field('connected_text');?>
+                            <h2 class="section-title"><?php the_sub_field('connected_title');?></h2>
+
+                            <p class="section-intro"><?php the_sub_field('connected_text', false, false);?></p>
                         </div>
                         <?php $post_objects = get_sub_field('posts');
 

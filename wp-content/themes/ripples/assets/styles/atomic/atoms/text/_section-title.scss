@@ -1,0 +1,11 @@
+.section-title{
+  text-transform: uppercase;
+
+  @include adjust-font-size-to(32px);
+  margin-bottom: rhythm(2, 32px);
+
+  @include breakpoint($small){
+    @include adjust-font-size-to(58px);
+    margin-bottom: rhythm(2, 58px);
+  }
+}
