@@ -20,7 +20,8 @@ function setup() {
 	// Register wp_nav_menu() menus
 	// http://codex.wordpress.org/Function_Reference/register_nav_menus
 	register_nav_menus( [
-		'main_menu'     => __( 'Main menu', 'ripples' )
+		'main_menu'     => __( 'Main menu', 'ripples' ),
+		'footer_menu'     => __( 'Footer menu', 'ripples' )
 	] );
 
 	// Add post thumbnails
