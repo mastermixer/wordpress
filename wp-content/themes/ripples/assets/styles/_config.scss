@@ -57,6 +57,9 @@ $gammaColor: #f47a6d !default;
 $deltaColor: #41abc9 !default;
 $epsilonColor: #46546a !default;
 
+
+$defaultGradient: linear-gradient(90deg,#40bfe0,#d11186);
+
 $colors: (
   body: $epsilonColor,
   body-bg: #fff,
