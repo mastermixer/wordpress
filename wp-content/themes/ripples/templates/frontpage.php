@@ -138,10 +138,13 @@
                             <ul class="post-list">
                                 <?php foreach ($post_objects as $post): // variable must be called $post (IMPORTANT) ?>
                                     <?php setup_postdata($post); ?>
-                                    <li>
+                                    <li class="post-list-item">
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?>
-                                            <?php the_post_thumbnail() ?>
+                                            <?php the_post_thumbnail('portrait-320') ?>
+                                            <div class="post-list-item-text">
+                                                <h3><?php the_title(); ?></h3>
+                                                <?php the_excerpt(); ?>
+                                            </div>
                                         </a>
                                     </li>
                                 <?php endforeach; ?>
