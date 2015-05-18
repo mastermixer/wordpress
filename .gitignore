@@ -44,7 +44,7 @@ wp-content/mu-plugins/wpengine-common
 wp-content/mysql.sql
 
 # wp core (as of 4.0.0)
-index.php
+/index.php
 license.txt
 readme.html
 wp-activate.php
