@@ -4,7 +4,6 @@
  */
 ?>
 
-
 <div class="page-top">
     <?php
     $frontPageTopImage = get_field('front_page_top_background_image'); ?>
@@ -32,7 +31,7 @@
              *****************************************************************************************/
 
             if (get_row_layout() == 'video'):?>
-                <section class="front-page-section">
+                <section class="section">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('video_title');?></h2>
@@ -51,7 +50,7 @@
              *****************************************************************************************/
 
             elseif (get_row_layout() == 'what_is_oiid'):?>
-                <section class="front-page-section">
+                <section class="section">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('what_is_title');?></h2>
@@ -92,7 +91,7 @@
              *****************************************************************************************/
 
             elseif (get_row_layout() == 'try_it_now'):?>
-                <section class="front-page-section">
+                <section class="section">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('title');?></h2>
@@ -123,7 +122,7 @@
              *****************************************************************************************/
 
             elseif (get_row_layout() == 'connected_articles'):?>
-                <section class="front-page-section">
+                <section class="section">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('connected_title');?></h2>

@@ -1,33 +1,40 @@
-.archive-list{
+.archive-list {
   margin-top: rhythm(10);
 }
 
-.archive-list-item{
+.archive-list-item {
   @extend %clearfix;
   margin-bottom: rhythm(8);
-  .title{
+  .title {
     @include adjust-font-size-to(24px);
     text-transform: uppercase;
-    color:$blue;
+    color: $blue;
   }
 
-  .text{
+  .text {
     @include adjust-font-size-to(24px);
   }
 
-  &:nth-child(2n+2){
-    .title{
-      color:$pink;
-    }
+  .published {
+    text-transform: uppercase;
+    @include adjust-font-size-to(18px);
   }
 
-  
+  &:nth-child(2n+2) {
+    .title {
+      color: $pink;
+    }
+  }
 }
 
-.archive-list-img{
+.archive-list-img {
+@include breakpoint($medium) {
   @include span(4);
 }
+}
 
-.archive-list-text{
-  @include span(last 8);
+.archive-list-text {
+  @include breakpoint($medium) {
+    @include span(last 8);
+  }
 }

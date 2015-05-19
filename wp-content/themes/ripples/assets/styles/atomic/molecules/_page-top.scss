@@ -1,7 +1,14 @@
 .page-top {
   width: 100%;
   background-color: $black;
-  height: calc(100% - 120px);
+
+  .page-template-frontpage & {
+    height: calc(100% - 120px);
+  }
+  
+  .page-template-archive & {
+    height: 320px;
+  }
 }
 
 .page-top-wrapper {
@@ -14,6 +21,7 @@
 .page-top-inside {
   display: table-cell;
   vertical-align: middle;
+  color:white;
 }
 
 
