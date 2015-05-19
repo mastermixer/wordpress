@@ -84,7 +84,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "the_content",
         "excerpt",
         "custom_fields",
@@ -99,5 +98,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1431942241
+    "modified": 1432032183
 }
