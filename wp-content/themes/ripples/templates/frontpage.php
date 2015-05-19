@@ -16,6 +16,10 @@
     </div>
 </div>
 
+<div class="front-page-nav">
+    This is the front page navigation
+</div>
+
 <div class="flexible-sections">
     <?php
 
@@ -142,7 +146,7 @@
                                                 <h3><?php the_title(); ?></h3>
                                                 <?php // the_excerpt(); ?>
                                                 <p>
-                                                    <?php // this wp function trims text, in this case the excerpt, to the length we set.
+                                                    <?php // this wp function trims text, in this case the excerpt, to the length we set. This is a simple solution for now.
                                                     echo wp_trim_words(get_the_excerpt(), 8); ?>
                                                 </p>
                                             </div>
@@ -154,7 +158,6 @@
                         <?php endif;?>
                     </div>
                 </section>
-
             <?php endif;
 
         endwhile;

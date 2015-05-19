@@ -33,6 +33,14 @@
       @include adjust-font-size-to(58px);
     }
   }
+
+  p{
+    max-width: 600px;
+    margin:0 auto;
+    @include breakpoint($medium) {
+      @include adjust-font-size-to(22px);
+    }
+  }
 }
 
 
