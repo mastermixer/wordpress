@@ -1,0 +1,33 @@
+.archive-list{
+  margin-top: rhythm(10);
+}
+
+.archive-list-item{
+  @extend %clearfix;
+  margin-bottom: rhythm(8);
+  .title{
+    @include adjust-font-size-to(24px);
+    text-transform: uppercase;
+    color:$blue;
+  }
+
+  .text{
+    @include adjust-font-size-to(24px);
+  }
+
+  &:nth-child(2n+2){
+    .title{
+      color:$pink;
+    }
+  }
+
+
+}
+
+.archive-list-img{
+  @include span(4);
+}
+
+.archive-list-text{
+  @include span(last 8);
+}

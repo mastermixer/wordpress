@@ -64,6 +64,7 @@ function display_sidebar() {
 
 // Thumbnail sizes
 add_image_size( 'portrait-320', 320, 460, true );
+add_image_size( 'landscape-340', 340, 191, true );
 
 /*
 to add more sizes, simply copy a line from above

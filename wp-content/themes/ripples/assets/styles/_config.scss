@@ -51,6 +51,8 @@ $xlarge: min-width 1440px;
 //COLORS
 $black: #171717 !default;
 $lightBg: #f7f7f7 !default;
+$blue: #40bfe0;
+$pink: #d11186;
 //ALL SITE COLORS EXCEPT BLACK AND WHITE
 $alphaColor: #2abb9d !default;
 $betaColor: #ffd65d !default;
@@ -59,7 +61,7 @@ $deltaColor: #41abc9 !default;
 $epsilonColor: #46546a !default;
 
 
-$defaultGradient: linear-gradient(90deg,#40bfe0,#d11186);
+$defaultGradient: linear-gradient(90deg,$pink,$blue);
 
 $colors: (
   body: $epsilonColor,
