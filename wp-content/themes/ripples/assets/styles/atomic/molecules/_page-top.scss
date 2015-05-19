@@ -9,6 +9,10 @@
   .page-template-archive & {
     height: 320px;
   }
+
+  .page-template-contact-us & {
+    height: 320px;
+  }
 }
 
 .page-top-wrapper {
@@ -22,6 +26,13 @@
   display: table-cell;
   vertical-align: middle;
   color:white;
+
+  h1{
+    text-transform: uppercase;
+    @include breakpoint($medium) {
+      @include adjust-font-size-to(58px);
+    }
+  }
 }
 
 

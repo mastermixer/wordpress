@@ -5,19 +5,15 @@
 .archive-list-item {
   @extend %clearfix;
   margin-bottom: rhythm(8);
+
+  a {
+    text-decoration: none;
+  }
+
   .title {
     @include adjust-font-size-to(24px);
     text-transform: uppercase;
     color: $blue;
-  }
-
-  .text {
-    @include adjust-font-size-to(24px);
-  }
-
-  .published {
-    text-transform: uppercase;
-    @include adjust-font-size-to(18px);
   }
 
   &:nth-child(2n+2) {
@@ -25,12 +21,38 @@
       color: $pink;
     }
   }
+
+  .text {
+    @include breakpoint($medium) {
+      @include adjust-font-size-to(24px);
+    }
+  }
+
+  .published {
+    text-transform: uppercase;
+    @include breakpoint($medium) {
+      @include adjust-font-size-to(18px);
+    }
+  }
+
+  &:hover{
+    .title{
+      text-decoration: underline;
+    }
+  }
+
 }
 
 .archive-list-img {
-@include breakpoint($medium) {
-  @include span(4);
-}
+  margin-bottom: rhythm(4);
+
+  @include breakpoint($medium) {
+    @include span(4);
+    margin-bottom: 0;
+  }
+  img{
+    width:100%;
+  }
 }
 
 .archive-list-text {
