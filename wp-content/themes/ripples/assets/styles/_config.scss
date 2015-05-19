@@ -58,7 +58,7 @@ $alphaColor: #2abb9d !default;
 $betaColor: #ffd65d !default;
 $gammaColor: #f47a6d !default;
 $deltaColor: #41abc9 !default;
-$epsilonColor: #46546a !default;
+$epsilonColor: #171717 !default;
 
 
 $defaultGradient: linear-gradient(90deg,$pink,$blue);
@@ -77,28 +77,28 @@ $colors: (
 $fonts: (
   h1: (
     family: #{"GT-walsheim", Arial ,Georgia, sans-serif},
-    weight: normal,
+    weight: 700,
     style: normal,
     mobile-size: 32px,
     desktop-size: 42px
   ),
   h2: (
     family: #{"GT-walsheim", Arial ,Georgia, sans-serif},
-    weight: normal,
+    weight: 700,
     style: normal,
     mobile-size: 26px,
     desktop-size: 32px
   ),
   h3: (
     family: #{"GT-walsheim", Arial ,Georgia, sans-serif},
-    weight: normal,
+    weight: 700,
     style: normal,
     mobile-size: 18px,
     desktop-size: 22px
   ),
   h4: (
     family: #{"GT-walsheim", Arial, sans-serif},
-    weight: normal,
+    weight: 700,
     style: normal,
     mobile-size: 16px,
     desktop-size: 18px
