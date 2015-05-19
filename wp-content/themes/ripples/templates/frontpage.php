@@ -8,9 +8,13 @@
 <div class="page-top">
     <?php
     $frontPageTopImage = get_field('front_page_top_background_image'); ?>
-    <?php echo wp_get_attachment_image($frontPageTopImage); ?>
-    <h1><?php the_field('front_page_top_title'); ?></h1>
-    <?php the_field('front_page_top_text'); ?>
+    <?php //echo wp_get_attachment_image($frontPageTopImage); ?>
+    <div class="page-top-wrapper">
+        <div class="page-top-inside">
+            <h1><?php the_field('front_page_top_title'); ?></h1>
+            <?php the_field('front_page_top_text'); ?>
+        </div>
+    </div>
 </div>
 
 <div class="flexible-sections">
