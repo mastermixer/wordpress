@@ -1,5 +1,20 @@
+.contact-us-text {
+	text-align: center;
+	padding: 40px 0;
+	h2 {
+		font-size: 34px;
+		color: black;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-style: italic;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
 .contact-form {
-	padding: 20px 0;
+	padding: 40px 0;
 	background-color: black;
 
 	.validation_error {
@@ -12,11 +27,13 @@
 	}
 
 	.gfield_label {
-		display: none;
+		//display: none;
+		@extend %is-vishidden;
 	}
 
 	.gfield_description {
 		display: none;
+		//@extend %is-vishidden;
 	}
 
 	.validation_message {
@@ -25,20 +42,34 @@
 	}
 
 	.ginput_container {
-		background: $defaultGradient;
+		//background: $defaultGradient;
 		padding: 0;
 		margin-top: 10px;
+		position: relative;
+
+		&:after {
+			content: " ";
+			height: 2px;
+			width: 100%;
+			background-color: blue;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: $defaultGradient;
+
+		}
 
 		input, 
 		textarea {
 			width: 100%;
 			background-color: black;
-			margin: 0 0 4px 0;
 			border: 1px solid black;
 			-webkit-appearance: none;
 			color: white;
 			font-family: "GT-walsheim";
 			font-size: 18px;
+
 			&:focus {
 				outline: none;
 			}
@@ -65,6 +96,7 @@
 
 		textarea {
 			margin-bottom: 0;
+			height: 100px;
 		}
 
 	}
