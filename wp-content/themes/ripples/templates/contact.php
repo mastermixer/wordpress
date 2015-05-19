@@ -4,13 +4,19 @@
  */
 ?>
 
+<div class="page-top">
+    <div class="page-top-wrapper">
+        <div class="page-top-inside">
+            <h1><?php the_title(); ?></h1>
+        </div>
+    </div>
+</div>
+
+
 <?php inc('atom', 'main-start'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <article <?php post_class(); ?>>
         <div class="inner-container">
-        <header>
-            <h1 class="entry-title"><?php the_title(); ?></h1>
-        </header>
 
         <h2><?php the_field('subtitle') ?></h2>
         <div class="text">
