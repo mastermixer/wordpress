@@ -2,6 +2,7 @@
   .post-list-item {
     position: relative;
     overflow: hidden;
+    margin-bottom: rhythm(8);
     @include breakpoint($small) {
       width: 30%;
       float: left;
@@ -11,14 +12,17 @@
       }
 
     }
-    .attachment-portrait-320{
-      width:100%;
+    .attachment-portrait-320 {
+      width: 100%;
     }
 
     .post-list-item-text {
       position: absolute;
       width: 100%;
-      padding: rhythm(4) rhythm(5);
+      padding: rhythm(2) rhythm(3);
+      @include breakpoint($medium) {
+        padding: rhythm(4) rhythm(5);
+      }
       bottom: 0;
       left: 0;
       background-color: rgba($black, 0.85);
@@ -35,11 +39,29 @@
         right: 0;
 
       }
+
+      h3{
+        margin-bottom: 0;
+        text-transform: uppercase;
+        @include breakpoint($medium){
+          margin-bottom: rhythm(1, 22px);
+        }
+      }
+
+      p{
+        //display: none;
+       /* white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;*/
+        @include breakpoint($medium){
+
+        }
+      }
     }
 
-    &:hover{
-      .post-list-item-text{
-        bottom:5px;
+    &:hover {
+      .post-list-item-text {
+        bottom: 5px;
       }
     }
   }

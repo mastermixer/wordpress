@@ -140,7 +140,11 @@
                                             <?php the_post_thumbnail('portrait-320') ?>
                                             <div class="post-list-item-text">
                                                 <h3><?php the_title(); ?></h3>
-                                                <?php the_excerpt(); ?>
+                                                <?php // the_excerpt(); ?>
+                                                <p>
+                                                    <?php // this wp function trims text, in this case the excerpt, to the length we set.
+                                                    echo wp_trim_words(get_the_excerpt(), 8); ?>
+                                                </p>
                                             </div>
                                         </a>
                                     </li>
