@@ -2,10 +2,12 @@
 	background-color: black;
 	min-height: 110px;
 	position: relative;
+	text-align: center;
+	padding: 30px 0;
 
 	.inner-container {
 		position: relative;
-		height: 100px;
+		min-height: 100px;
 	}
 
 	&:after {
@@ -20,21 +22,34 @@
 
 	img {
 		width: 100px;
-		position: absolute;
-		top: 20px;
+		margin: 20px;
+		@include breakpoint($small) {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 
 	#footer-navigation {
-		position: absolute;
-		top: 50%;
-		right: 0;
+		@include breakpoint($small) {
+			position: absolute;
+			top: 50%;
+			right: 0;
+		}
+
 		ul {
-			margin-top: -30px;
+			
+			@include breakpoint($small) {
+				margin-top: -30px;
+			}
+			
 			li {
-				display: inline-block;
+				@include breakpoint($small) {
+					display: inline-block;
+				}
 				a {
 					color: white;
-					padding: 20px;
+					padding: 20px 20px 0;
 					display: inline-block;
 					text-decoration: none;
 					font-weight: 700;
