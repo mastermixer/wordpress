@@ -10,18 +10,12 @@
         <div class="inner-container">
         <header>
             <h1 class="entry-title"><?php the_title(); ?></h1>
-            <?php inc('molecule', 'entry-meta'); ?>
         </header>
 
-        <div class="left-col">
             <div class="entry-content">
                 <?php the_content(); ?>
             </div>
-        </div>
 
-        <div class="right-col">
-
-        </div>
 
 
         <footer>
