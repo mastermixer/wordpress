@@ -41,9 +41,9 @@ $sharing_email    = sprintf("mailto:?subject=Oiid is fun&body=Tell me more",
 <div class="inner-container">
     <div class="article-social">
         <ul>
-            <li><a href="<?php echo $sharing_facebook; ?>" class="Facebook">Facebook</a></li>
-            <li><a href="<?php echo $sharing_twitter; ?>" class="Twitter">Twitter</a></li>
-            <li><a href="<?php echo $sharing_linkedin; ?>" class="Linkedin">LinkedIn</a></li>
+            <li><a href="<?php echo $sharing_facebook; ?>" class="facebook">Facebook</a></li>
+            <li><a href="<?php echo $sharing_twitter; ?>" class="twitter">Twitter</a></li>
+            <li><a href="<?php echo $sharing_linkedin; ?>" class="linkedin">LinkedIn</a></li>
             <li><a href="<?php echo $sharing_email; ?>" class="email">Epost</a></li>
         </ul>
     </div>
