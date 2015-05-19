@@ -1,58 +1,50 @@
-/*Add font import here*/
-// @include font-face("Walsheim", "../fonts/GT-Walsheim-Regular", "../fonts/GT-Walsheim-Regular.eot", regular);
-// @include font-face("Walsheim", "../fonts/GT-Walsheim-Bold", bold, $file-formats: woff);
-// @include font-face("Walsheim", "../fonts/GT-Walsheim-Regular-Oblique", normal, italic, $file-formats: woff);
-// @include font-face("Walsheim", "../fonts/GT-Walsheim-Bold-Oblique", bold, italic, $file-formats: woff);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Ultra-Light.woff",
+//         "../fonts/GT-Walsheim-Ultra-Light.ttf",
+//         "../fonts/GT-Walsheim-Ultra-Light.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Ultra-Light.eot", 200);
 
-//@include font-face("Walsheim", $font-files, $eot, $weight, $style)
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Ultra-Light-Oblique.woff",
+//         "../fonts/GT-Walsheim-Ultra-Light-Oblique.ttf",
+//         "../fonts/GT-Walsheim-Ultra-Light-Oblique.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Ultra-Light-Oblique.eot", 200, italic);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Ultra-Light.woff",
-        "../fonts/GT-Walsheim-Ultra-Light.ttf",
-        "../fonts/GT-Walsheim-Ultra-Light.svg"
-    ),
-    "../fonts/GT-Walsheim-Ultra-Light.eot", 200);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Thin.woff",
+//         "../fonts/GT-Walsheim-Thin.ttf",
+//         "../fonts/GT-Walsheim-Thin.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Thin.eot", 300);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Ultra-Light-Oblique.woff",
-        "../fonts/GT-Walsheim-Ultra-Light-Oblique.ttf",
-        "../fonts/GT-Walsheim-Ultra-Light-Oblique.svg"
-    ),
-    "../fonts/GT-Walsheim-Ultra-Light-Oblique.eot", 200, italic);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Thin-Oblique.woff",
+//         "../fonts/GT-Walsheim-Thin-Oblique.ttf",
+//         "../fonts/GT-Walsheim-Thin-Oblique.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Thin.eot", 300, italic);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Thin.woff",
-        "../fonts/GT-Walsheim-Thin.ttf",
-        "../fonts/GT-Walsheim-Thin.svg"
-    ),
-    "../fonts/GT-Walsheim-Thin.eot", 300);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Light.woff",
+//         "../fonts/GT-Walsheim-Light.ttf",
+//         "../fonts/GT-Walsheim-Light.svg"
+//     ),
+//     "../fonts/.eot", 400);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Thin-Oblique.woff",
-        "../fonts/GT-Walsheim-Thin-Oblique.ttf",
-        "../fonts/GT-Walsheim-Thin-Oblique.svg"
-    ),
-    "../fonts/GT-Walsheim-Thin.eot", 300, italic);
-
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Light.woff",
-        "../fonts/GT-Walsheim-Light.ttf",
-        "../fonts/GT-Walsheim-Light.svg"
-    ),
-    "../fonts/.eot", 400);
-
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Light-Oblique.woff",
-        "../fonts/GT-Walsheim-Light-Oblique.ttf",
-        "../fonts/GT-Walsheim-Light-Oblique.svg"
-    ),
-    "../fonts/GT-Walsheim-Light.eot", 400, italic);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Light-Oblique.woff",
+//         "../fonts/GT-Walsheim-Light-Oblique.ttf",
+//         "../fonts/GT-Walsheim-Light-Oblique.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Light.eot", 400, italic);
 
 @include font-face("GT-walsheim",
     font-files(
@@ -70,21 +62,21 @@
     ),
     "../fonts/GT-Walsheim-Regular-Oblique.eot", 500, italic);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Medium.woff",
-        "../fonts/GT-Walsheim-Medium.ttf",
-        "../fonts/GT-Walsheim-Medium.svg"
-    ),
-    "../fonts/GT-Walsheim-Medium.eot", 600);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Medium.woff",
+//         "../fonts/GT-Walsheim-Medium.ttf",
+//         "../fonts/GT-Walsheim-Medium.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Medium.eot", 600);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Medium-Oblique.woff",
-        "../fonts/GT-Walsheim-Medium-Oblique.ttf",
-        "../fonts/GT-Walsheim-Medium-Oblique.svg"
-    ),
-    "../fonts/GT-Walsheim-Medium-Oblique.eot", 600, italic);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Medium-Oblique.woff",
+//         "../fonts/GT-Walsheim-Medium-Oblique.ttf",
+//         "../fonts/GT-Walsheim-Medium-Oblique.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Medium-Oblique.eot", 600, italic);
 
 @include font-face("GT-walsheim",
     font-files(
@@ -102,35 +94,35 @@
     ),
     "../fonts/GT-Walsheim-Bold-Oblique.eot", 700, italic);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Black.woff",
-        "../fonts/GT-Walsheim-Black.ttf",
-        "../fonts/GT-Walsheim-Black.svg"
-    ),
-    "../fonts/GT-Walsheim-Black.eot", 800);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Black.woff",
+//         "../fonts/GT-Walsheim-Black.ttf",
+//         "../fonts/GT-Walsheim-Black.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Black.eot", 800);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Black-Oblique.woff",
-        "../fonts/GT-Walsheim-Black-Oblique.ttf",
-        "../fonts/GT-Walsheim-Black-Oblique.svg"
-    ),
-    "../fonts/GT-Walsheim-Black-Oblique.eot", 800, italic);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Black-Oblique.woff",
+//         "../fonts/GT-Walsheim-Black-Oblique.ttf",
+//         "../fonts/GT-Walsheim-Black-Oblique.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Black-Oblique.eot", 800, italic);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Ultra-Bold.woff",
-        "../fonts/GT-Walsheim-Ultra-Bold.ttf",
-        "../fonts/GT-Walsheim-Ultra-Bold.svg"
-    ),
-    "../fonts/GT-Walsheim-Ultra-Bold.eot", 900);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Ultra-Bold.woff",
+//         "../fonts/GT-Walsheim-Ultra-Bold.ttf",
+//         "../fonts/GT-Walsheim-Ultra-Bold.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Ultra-Bold.eot", 900);
 
-@include font-face("GT-walsheim",
-    font-files(
-        "../fonts/GT-Walsheim-Ultra-Bold-Oblique.woff",
-        "../fonts/GT-Walsheim-Ultra-Bold-Oblique.ttf",
-        "../fonts/GT-Walsheim-Ultra-Bold-Oblique.svg"
-    ),
-    "../fonts/GT-Walsheim-Ultra-Bold-Oblique.eot", 900, italic);
+// @include font-face("GT-walsheim",
+//     font-files(
+//         "../fonts/GT-Walsheim-Ultra-Bold-Oblique.woff",
+//         "../fonts/GT-Walsheim-Ultra-Bold-Oblique.ttf",
+//         "../fonts/GT-Walsheim-Ultra-Bold-Oblique.svg"
+//     ),
+//     "../fonts/GT-Walsheim-Ultra-Bold-Oblique.eot", 900, italic);
 
