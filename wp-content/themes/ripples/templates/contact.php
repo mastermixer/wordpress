@@ -17,11 +17,9 @@
             <?php the_field('text') ?>
         </div>
 
-            <div class="entry-content">
-                <?php the_content(); ?>
-            </div>
-
-
+        <div class="contact-form">
+            <?php the_content(); ?>
+        </div>
 
         <footer>
             <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'ripples'), 'after' => '</p></nav>']); ?>
