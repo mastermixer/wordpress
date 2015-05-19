@@ -8,9 +8,13 @@
 <div class="page-top">
     <?php
     $frontPageTopImage = get_field('front_page_top_background_image'); ?>
-    <?php echo wp_get_attachment_image($frontPageTopImage); ?>
-    <h1><?php the_field('front_page_top_title'); ?></h1>
-    <?php the_field('front_page_top_text'); ?>
+    <?php //echo wp_get_attachment_image($frontPageTopImage); ?>
+    <div class="page-top-wrapper">
+        <div class="page-top-inside">
+            <h1><?php the_field('front_page_top_title'); ?></h1>
+            <?php the_field('front_page_top_text'); ?>
+        </div>
+    </div>
 </div>
 
 <div class="flexible-sections">
@@ -30,10 +34,10 @@
             if (get_row_layout() == 'video'):?>
                 <section class="front-page-section">
                     <div class="inner-container">
-                        <div class="center-text">
+                        <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('video_title');?></h2>
 
-                            <p class="section-intro"><?php the_sub_field('video_text', false, false);?></p>
+                            <p class="section-intro-text"><?php the_sub_field('video_text', false, false);?></p>
                         </div>
                         <div class="video-container ratio-16-9">
                             <?php the_sub_field('video');?>
@@ -49,10 +53,10 @@
             elseif (get_row_layout() == 'what_is_oiid'):?>
                 <section class="front-page-section">
                     <div class="inner-container">
-                        <div class="center-text">
+                        <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('what_is_title');?></h2>
 
-                            <p class="section-intro"><?php the_sub_field('what_is_text', false, false);?></p>
+                            <p class="section-intro-text"><?php the_sub_field('what_is_text', false, false);?></p>
                         </div>
                         <?php if (have_rows('item')): ?>
                             <div class="items">
@@ -90,21 +94,24 @@
             elseif (get_row_layout() == 'try_it_now'):?>
                 <section class="front-page-section">
                     <div class="inner-container">
-                        <div class="center-text">
+                        <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('title');?></h2>
 
-                            <p class="section-intro"><?php the_sub_field('text', false, false);?></p>
+                            <p class="section-intro-text"><?php the_sub_field('text', false, false);?></p>
                         </div>
                         <?php if (have_rows('share_buttons')): ?>
-                            <div class="share-buttons">
+                            <div class="share-buttons center-text">
                                 <?php while (have_rows('share_buttons')): the_row(); ?>
                                     <?php $buttonImage = get_sub_field('button_image'); ?>
-                                    <a href="<?php the_sub_field('url'); ?>">
+                                    <a target="_blank" href="<?php the_sub_field('url'); ?>">
                                         <?php echo wp_get_attachment_image($buttonImage, 'full'); ?>
                                     </a>
                                 <?php endwhile; ?>
                             </div>
                         <?php endif;?>
+                        <div class="social">
+                            Will have social buttons
+                        </div>
                     </div>
                 </section>
 
@@ -118,10 +125,10 @@
             elseif (get_row_layout() == 'connected_articles'):?>
                 <section class="front-page-section">
                     <div class="inner-container">
-                        <div class="center-text">
+                        <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('connected_title');?></h2>
 
-                            <p class="section-intro"><?php the_sub_field('connected_text', false, false);?></p>
+                            <p class="section-intro-text"><?php the_sub_field('connected_text', false, false);?></p>
                         </div>
                         <?php $post_objects = get_sub_field('posts');
 

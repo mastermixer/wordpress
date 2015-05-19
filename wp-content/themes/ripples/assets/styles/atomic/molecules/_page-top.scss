@@ -1,5 +1,19 @@
-.page-top{
+.page-top {
   width: 100%;
   background-color: $black;
   height: calc(100% - 120px);
 }
+
+.page-top-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.page-top-inside {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+

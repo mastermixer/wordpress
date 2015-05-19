@@ -1,6 +1,7 @@
 .post-list {
   .post-list-item {
     position: relative;
+    overflow: hidden;
     @include breakpoint($small) {
       width: 30%;
       float: left;
@@ -8,8 +9,8 @@
       &:nth-child(3n+3) {
         margin-right: 0;
       }
-    }
 
+    }
     .attachment-portrait-320{
       width:100%;
     }
@@ -22,6 +23,24 @@
       left: 0;
       background-color: rgba($black, 0.85);
       color: white;
+      @include transition(position, 0.2s);
+
+      &:after {
+        height: 5px;
+        content: " ";
+        background: $defaultGradient;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+
+      }
+    }
+
+    &:hover{
+      .post-list-item-text{
+        bottom:5px;
+      }
     }
   }
 }
