@@ -1,0 +1,96 @@
+.contact-form {
+	padding: 20px 0;
+	background-color: black;
+
+	.validation_error {
+		color: white;
+	}
+
+	.gform_wrapper {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.gfield_label {
+		display: none;
+	}
+
+	.gfield_description {
+		display: none;
+	}
+
+	.validation_message {
+		color: red;
+		display: block;
+	}
+
+	.ginput_container {
+		background: $defaultGradient;
+		padding: 0;
+		margin-top: 10px;
+
+		input, 
+		textarea {
+			width: 100%;
+			background-color: black;
+			margin: 0 0 4px 0;
+			border: 1px solid black;
+			-webkit-appearance: none;
+			color: white;
+			font-family: "GT-walsheim";
+			font-size: 18px;
+			&:focus {
+				outline: none;
+			}
+			&::-webkit-input-placeholder {
+			   color: white;
+			}
+
+			&:-moz-placeholder {
+			   color: white;  
+			}
+
+			&::-moz-placeholder { 
+			   color: white;  
+			}
+
+			&:-ms-input-placeholder {  
+			   color: white;  
+			}
+		}
+
+		input[type=text] {
+			height: 50px;
+		}
+
+		textarea {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.gform_body {
+		//border: 1px solid white;
+		margin-bottom: 10px;
+	}
+
+	.gform_footer {
+		background-color: red;
+		display: inline-block;
+		padding: 4px;
+		background: $defaultGradient;
+
+		input {
+			background-color: black;
+			padding: 10px 30px;
+			color: white;
+			-webkit-appearance: none;
+			border: 1px solid black;
+			font-size: 25px;
+			text-transform: uppercase;
+			font-family: "GT-walsheim";
+			font-weight: 700;
+			font-style: italic;
+		}
+	}
+}
