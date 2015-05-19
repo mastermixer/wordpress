@@ -11,7 +11,7 @@
         FrontPageMenu = function () {
             return {
                 init: function (element) {
-                    console.log('hei',$('.front-page-nav')[0], Waypoint);
+                    console.log('hei FrontPageMenu');
 
                     var sticky = new Waypoint.Sticky({
 
