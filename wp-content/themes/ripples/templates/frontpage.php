@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="front-page-nav">
+<div class="front-page-nav" id="front-page-nav">
     This is the front page navigation
 </div>
 

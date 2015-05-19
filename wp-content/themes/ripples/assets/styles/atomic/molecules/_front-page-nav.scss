@@ -2,4 +2,11 @@
   height:120px;
   background-color: grey;
   width: 100%;
+
+  &.stuck {
+    position:fixed;
+    top:0;
+    z-index: 1000;
+  }
 }
+

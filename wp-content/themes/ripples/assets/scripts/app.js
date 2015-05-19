@@ -1,5 +1,5 @@
 (function () {
-    define(['jquery'], function ($) {
+    define(['jquery','frontPageMenu'], function ($, FrontPageMenu) {
         "use strict";
         var App;
 
@@ -7,6 +7,7 @@
             return {
                 init: function () {
                     console.log('Hello App!');
+                    var frontPageMenu = new FrontPageMenu().init();
                 }
             };
         };
