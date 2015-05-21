@@ -1,0 +1,9 @@
+.figure-with-caption {
+  margin-bottom: rhythm(6);
+
+  .figure-caption {
+    margin-top: rhythm(2);
+    @include adjust-font-size-to(14px);
+  }
+
+}

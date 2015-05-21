@@ -130,7 +130,6 @@
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('connected_title');?></h2>
-
                             <p class="section-intro-text"><?php the_sub_field('connected_text', false, false);?></p>
                         </div>
                         <?php $post_objects = get_sub_field('posts');

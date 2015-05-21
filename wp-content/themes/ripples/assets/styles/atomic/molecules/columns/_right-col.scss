@@ -1,4 +1,5 @@
-.right-col{
-  @include span(last 4);
-
+.right-col {
+  @include breakpoint($small) {
+    @include span(last 4);
+  }
 }

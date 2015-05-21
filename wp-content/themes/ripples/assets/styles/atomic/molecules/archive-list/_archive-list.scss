@@ -57,6 +57,6 @@
 
 .archive-list-text {
   @include breakpoint($medium) {
-    @include span(last 8);
+    @include span(last 7);
   }
 }

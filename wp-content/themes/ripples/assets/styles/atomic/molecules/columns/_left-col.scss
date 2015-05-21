@@ -1,3 +1,8 @@
-.left-col{
-  @include span(8);
+.left-col {
+  margin-bottom: rhythm(6);
+  @include breakpoint($small) {
+    @include span(7);
+    margin-bottom: 0;
+  }
+
 }

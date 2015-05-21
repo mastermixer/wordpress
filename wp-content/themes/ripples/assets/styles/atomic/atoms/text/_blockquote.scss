@@ -1,0 +1,19 @@
+blockquote{
+  color:$blue;
+  @include adjust-font-size-to(35px);
+  border-top: 2px solid $blue;
+  padding-top: 36px;
+  margin-top: 36px;
+  position: relative;
+
+  &:before{
+    content:"";
+    padding: 0 10px 0 0;
+    height: 30px;
+    width:43px;
+    background-color: white;
+    position: absolute;
+    top:-17px;
+    left:0;
+  }
+}

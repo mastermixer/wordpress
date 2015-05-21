@@ -1,12 +1,15 @@
 /*Import molecule files*/
 @import "what-is-item";
-@import "section";
+@import "section/section";
 
 //@import "navigation/navigation";
 @import "layout/layout";
 @import "post-list/post-list";
-@import "page-top";
-@import "front-page-nav";
+@import "page-top/page-top";
+@import "front-page-nav/front-page-nav";
+@import "figure-with-caption/figure-with-caption";
+
+
 @import "contact-form/contact-form";
 
 @import "columns/left-col";
@@ -14,5 +17,7 @@
 
 @import "share-buttons/share-buttons";
 
+
 @import "archive-list/archive-list";
+
 
