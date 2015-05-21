@@ -3,9 +3,30 @@
     "title": "Options page",
     "fields": [
         {
+            "key": "field_555dcf1b10cea",
+            "label": "Download title",
+            "name": "download_title",
+            "type": "text",
+            "instructions": "The text before the download buttons in the explore oiid section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
             "key": "field_555dc97a4fe12",
-            "label": "Store buttons",
-            "name": "store_buttons",
+            "label": "Download buttons",
+            "name": "download_buttons",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -78,5 +99,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1432209940
+    "modified": 1432211285
 }
