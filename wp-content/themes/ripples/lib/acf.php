@@ -30,6 +30,12 @@ function my_acf_json_load_point( $paths ) {
 }
 
 //option page : http://www.advancedcustomfields.com/resources/options-page/
-/*if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page();
-}*/
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title' 	=> __('Oiid settings', 'ripples'),
+        'menu_title'	=> __('Oiid settings', 'ripples'),
+        'menu_slug' 	=> 'oiid-settings',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> false
+    ));
+}

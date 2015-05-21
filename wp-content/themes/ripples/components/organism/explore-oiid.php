@@ -4,9 +4,6 @@
         <p>
             … or download the app now
         </p>
-
-        <div class="social-buttons">
-
-        </div>
+        <?php inc('molecule', 'download-buttons'); ?>
     </div>
 </div>

@@ -17,7 +17,7 @@
             <?php
             $args = array(
                 'post_type' => array('post'),
-                'posts_per_page' => -1
+                'posts_per_page' => 2
             );
             $postsQuery = new WP_Query($args);
 
@@ -40,9 +40,8 @@
             wp_reset_postdata();
             ?>
 
-
         </ul>
-    </div>
 
+    </div>
 
 <?php inc('organism', 'explore-oiid'); ?>

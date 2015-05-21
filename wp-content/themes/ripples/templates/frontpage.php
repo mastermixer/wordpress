@@ -102,16 +102,7 @@
 
                             <p class="section-intro-text"><?php the_sub_field('text', false, false);?></p>
                         </div>
-                        <?php if (have_rows('share_buttons')): ?>
-                            <div class="share-buttons center-text">
-                                <?php while (have_rows('share_buttons')): the_row(); ?>
-                                    <?php $buttonImage = get_sub_field('button_image'); ?>
-                                    <a target="_blank" href="<?php the_sub_field('url'); ?>">
-                                        <?php echo wp_get_attachment_image($buttonImage, 'full'); ?>
-                                    </a>
-                                <?php endwhile; ?>
-                            </div>
-                        <?php endif;?>
+                        <?php inc('molecule', 'download-buttons'); ?>
                         <div class="social">
                             Will have social buttons
                         </div>
