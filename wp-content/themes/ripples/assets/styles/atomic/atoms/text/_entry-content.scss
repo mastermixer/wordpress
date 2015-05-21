@@ -1,0 +1,13 @@
+.entry-content, .mce-content-body{
+  ul{
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: rhythm(3);
+  }
+
+  ol{
+    list-style: decimal;
+    margin-left: 20px;
+    margin-bottom: rhythm(3);
+  }
+}

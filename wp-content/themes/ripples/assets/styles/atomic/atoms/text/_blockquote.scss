@@ -1,5 +1,5 @@
 blockquote{
-  color:$blue;
+ // color:$blue;
   @include adjust-font-size-to(35px);
   border-top: 2px solid $blue;
   padding-top: 36px;
@@ -8,10 +8,13 @@ blockquote{
 
   &:before{
     content:"";
-    padding: 0 10px 0 0;
-    height: 30px;
-    width:43px;
+    background-image: url("../images/quote2.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
     background-color: white;
+    background-size: 43px 30px;
+    height: 30px;
+    width:53px;
     position: absolute;
     top:-17px;
     left:0;
