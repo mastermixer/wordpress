@@ -34,6 +34,7 @@
                         $('html, body').animate({
                             scrollTop: $(item).offset().top - 120
                         }, 500);
+
                     })
                 }
             };

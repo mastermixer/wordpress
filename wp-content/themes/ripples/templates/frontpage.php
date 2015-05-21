@@ -17,7 +17,11 @@
 </div>
 
 <div class="front-page-nav" id="front-page-nav">
-<ul></ul>
+
+    <!-- Using js to populate this list with links check out frontPageMenu.js. Names are set in WP admin on the front page pr section -->
+    <!--TODO: Needs styling and highlighting when active and is in view. Use Waypoints??-->
+    <ul></ul>
+
     <div class="">
         <?php while (have_rows('download_buttons', 'option')): the_row(); ?>
             <?php $buttonImage = get_sub_field('button_image'); ?>
