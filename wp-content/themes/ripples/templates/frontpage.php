@@ -17,7 +17,15 @@
 </div>
 
 <div class="front-page-nav" id="front-page-nav">
-    This is the front page navigation
+<ul></ul>
+    <div class="">
+        <?php while (have_rows('download_buttons', 'option')): the_row(); ?>
+            <?php $buttonImage = get_sub_field('button_image'); ?>
+            <a target="_blank" href="<?php the_sub_field('button_url'); ?>">
+                <?php echo wp_get_attachment_image($buttonImage, 'full'); ?>
+            </a>
+        <?php endwhile; ?>
+    </div>
 </div>
 
 <div class="flexible-sections">
@@ -35,7 +43,7 @@
              *****************************************************************************************/
 
             if (get_row_layout() == 'video'):?>
-                <section class="section">
+                <section class="section" id="video" data-name="<?php the_sub_field('title_for_menu', false, false);?>">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('video_title');?></h2>
@@ -54,7 +62,7 @@
              *****************************************************************************************/
 
             elseif (get_row_layout() == 'what_is_oiid'):?>
-                <section class="section">
+                <section class="section" id="what" data-name="<?php the_sub_field('title_for_menu', false, false);?>">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('what_is_title');?></h2>
@@ -95,7 +103,7 @@
              *****************************************************************************************/
 
             elseif (get_row_layout() == 'try_it_now'):?>
-                <section class="section">
+                <section class="section" data-name="<?php the_sub_field('title_for_menu', false, false);?>">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('title');?></h2>
@@ -117,7 +125,7 @@
              *****************************************************************************************/
 
             elseif (get_row_layout() == 'connected_articles'):?>
-                <section class="section">
+                <section class="section" data-name="<?php the_sub_field('title_for_menu', false, false);?>">
                     <div class="inner-container">
                         <div class="section-intro center-text">
                             <h2 class="section-title"><?php the_sub_field('connected_title');?></h2>

@@ -8,5 +8,17 @@
     top:0;
     z-index: 1000;
   }
+
+  ul{
+    float:left;
+    li{
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+
+  div{
+    float:right;
+  }
 }
 
