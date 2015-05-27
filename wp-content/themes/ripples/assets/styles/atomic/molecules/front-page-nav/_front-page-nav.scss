@@ -1,8 +1,9 @@
 .front-page-nav{
-  height:120px;
+  height:100px;
   background-color: white;
   width: 100%;
   border: 1px solid #ddd;
+  position: relative;
 
   &.stuck {
     position:fixed;
@@ -10,16 +11,43 @@
     z-index: 1000;
   }
 
-  ul{
-    float:left;
-    li{
-      display: inline-block;
-      margin-right: 20px;
-    }
-  }
+  ul {
+      position: absolute;
+      bottom: 0;
+      //border: 1px solid red;
+      padding: 0;
+      left: 10px;
 
-  div{
-    float:right;
-  }
+      
+      li {
+          display: inline-block;
+        a {
+          //color: white;
+          padding: 40px 20px 30px;
+          //height: 120px;
+          display: inline-block;
+          text-decoration: none;
+          font-weight: 700;
+          font-style: italic;
+          text-transform: uppercase;
+          position: relative;
+          
+          &:hover:after {
+            background: $defaultGradient;
+            height: 4px;
+            display: block;
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            right: 15px;
+          }
+        }
+      }
+    }
+
+  // div{
+  //   float:right;
+  // }
 }
 
