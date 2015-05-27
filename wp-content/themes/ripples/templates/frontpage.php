@@ -6,9 +6,8 @@
 
 <div class="page-top">
     <?php
-    $frontPageTopImage = get_field('front_page_top_background_image'); ?>
-    <?php //echo wp_get_attachment_image($frontPageTopImage); ?>
-    <div class="page-top-wrapper">
+    $frontPageTopImage = wp_get_attachment_url(get_field('front_page_top_background_image')); ?>
+    <div class="page-top-wrapper" style="background-image: url(<?php echo $frontPageTopImage; ?>); ">
         <div class="page-top-inside">
             <h1><?php the_field('front_page_top_title'); ?></h1>
             <?php the_field('front_page_top_text'); ?>
