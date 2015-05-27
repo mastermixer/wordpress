@@ -21,14 +21,28 @@
   height: 100%;
   text-align: center;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto auto;
+  background-position: top center;
+  background-size: contain;
+  position: relative;
 }
 
 .page-top-inside {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   color:white;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto auto;
+
+  img {
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //margin-left: -70px;
+    width: 140px;
+    margin-bottom: 30px;
+    margin-top: 15%;
+  }
 
   h1{
     text-transform: uppercase;

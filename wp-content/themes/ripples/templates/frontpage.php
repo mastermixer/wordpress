@@ -26,6 +26,7 @@
     <ul></ul>
 
     <div class="">
+    
         <?php while (have_rows('download_buttons', 'option')): the_row(); ?>
             <?php $buttonImage = get_sub_field('button_image'); ?>
             <a target="_blank" href="<?php the_sub_field('button_url'); ?>">
@@ -118,9 +119,8 @@
                             <p class="section-intro-text"><?php the_sub_field('text', false, false);?></p>
                         </div>
                         <?php inc('molecule', 'download-buttons'); ?>
-                        <div class="social">
-                            Will have social buttons
-                        </div>
+                        <?php inc('molecule', 'social-media'); ?>
+
                     </div>
                 </section>
 

@@ -1,0 +1,41 @@
+.share-buttons {
+	//border: 1px solid red;
+	text-align: center;
+
+	h3 {
+		font-weight: 300;
+	}
+
+	ul {
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				height: 50px;
+				width: 50px;
+				overflow: hidden;
+				border: 1px solid black;
+				text-indent: -200px;
+				border-radius: 40px;
+				background: url('../images/social_media.svg') no-repeat;
+				background-size: auto 50px;
+				&.facebook {
+					background-position: 0 0;
+				}
+				&.twitter {
+					background-position: -76px 0;
+				}
+				&.email {
+					background-position: -231px 0;
+				}
+				&.googleplus {
+					background-position: -153px 0;
+				}
+				&:hover {
+					background-color: #eee;
+				}
+
+			}
+		}
+	}
+}
