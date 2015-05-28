@@ -20,8 +20,8 @@ function assets() {
 
 	wp_enqueue_script( 'modernizr', $distFolder . 'scripts/modernizr.js', [ ], null, false );
 
-	if ( WP_ENV !== 'development' ) {
-		wp_enqueue_script( 'ripples_rjs', $assetFolder . 'scripts/require.js', [ ], null, true );
+	if ( WP_ENV === 'development' ) {
+		wp_enqueue_script( 'ripples_rjs', $vendorFolder . 'requirejs/require.js', [ ], null, true );
 		wp_enqueue_script( 'ripples_js', $assetFolder . 'scripts/main.js' , [ ], null, true );
 	} else {
 		wp_enqueue_script( 'ripples_js_min', $distFolder .  'scripts/main.min.js' , [ ], null, true );
