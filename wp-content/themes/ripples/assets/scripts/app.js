@@ -8,11 +8,6 @@
                 init: function () {
                     console.log('Hello App!');
                     var frontPageMenu = new FrontPageMenu().init();
-
-                    $('.nav-button').on('click', function() {
-                        console.log('hello world');
-                        $('.nav-mobile-wrapper').toggleClass('visible');
-                    });
                 }
             };
         };

@@ -22,10 +22,10 @@
                         var name = $(this).data('name');
                         $(this).attr('id', 'section'+num);
                         var id = $(this).attr('id');
-                        console.log(name);
+                        //console.log(name);
                         $('.nav-list').append("<li><a href='#" + id + "'>" + name + "</a></li>");
                         num++;
-                        console.log(num);
+                        //console.log(num);
                     });
 
                     $('.front-page-nav ul a').on('click', function(event){
@@ -37,6 +37,11 @@
                         }, 500);
 
                     });
+
+                    $('.nav-button').on('click', function() {
+                        $('.nav-mobile-wrapper').toggleClass('visible');
+                    });
+
                 }
             };
         };
