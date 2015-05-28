@@ -39,15 +39,17 @@
             content: " ";
             position: absolute;
             bottom: 0;
-            left: 15px;
-            right: 15px;
+            left: 10px;
+            right: 10px;
           }
         }
       }
     }
 
-  // div{
-  //   float:right;
-  // }
+  .app-buttons {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
 }
 

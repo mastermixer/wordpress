@@ -25,8 +25,8 @@
     <!--TODO: Needs styling and highlighting when active and is in view. Use Waypoints??-->
     <ul></ul>
 
-    <div class="">
-    
+    <div class="app-buttons">
+
         <?php while (have_rows('download_buttons', 'option')): the_row(); ?>
             <?php $buttonImage = get_sub_field('button_image'); ?>
             <a target="_blank" href="<?php the_sub_field('button_url'); ?>">
