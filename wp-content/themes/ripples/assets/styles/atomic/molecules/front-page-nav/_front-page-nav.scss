@@ -4,6 +4,11 @@
   width: 100%;
   border: 1px solid #ddd;
   position: relative;
+  @include breakpoint($lt-medium) {
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+  }
 
   .nav-button {
     border: 1px solid black;
@@ -17,6 +22,9 @@
     background: url(../images/hamburger.svg) no-repeat center center;
     z-index: 1000;
     cursor: pointer;
+    overflow: hidden;
+    text-indent: -1000px;
+    color: red;
     @include breakpoint($medium) {
       display: none;
     }
@@ -28,29 +36,41 @@
     z-index: 1000;
   }
 
-  ul {
-      @include breakpoint($lt-medium) {
-        display: none;
-      }
-      display: block;
-      position: absolute;
+  .nav-mobile-wrapper {
+    display: block;
+    
+    @include breakpoint($lt-medium) {
+      display: none;
+      position: fixed;
+      top: 100px;
+      min-height: 500px;
+      left: 0;
+      right: 0;
       bottom: 0;
-      //border: 1px solid red;
-      padding: 0;
-      left: 50px;
-
+      z-index: 1000;
+      background: white;
+      text-align: center;
       &.visible {
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: white;
+      }
+    }
+  }
+
+  ul {
+      display: block;
+      
+      @include breakpoint($medium) {
+          position: absolute;
+          bottom: 0;
+          padding: 0;
+          left: 50px;
       }
       
       li {
           @include breakpoint($medium) {
             display: inline-block;
           }
+
         a {
           //color: white;
           padding: 40px 20px 30px;

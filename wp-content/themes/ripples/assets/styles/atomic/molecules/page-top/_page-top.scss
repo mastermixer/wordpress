@@ -3,7 +3,11 @@
   background-color: $black;
 
   .page-template-frontpage & {
-    height: calc(100% - 100px);
+    margin-top: 100px;
+    @include breakpoint($medium) {
+      height: calc(100% - 100px);
+      margin-top: 0;
+    }
   }
   
   .page-template-archive & {
@@ -16,23 +20,27 @@
 }
 
 .page-top-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
   text-align: center;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   position: relative;
+  height: auto;
+  width: 100%;
+  display: table;
+  @include breakpoint($medium) {
+    height: 100%;
+  }
 }
 
 .page-top-inside {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
   color:white;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: auto 30%;
+  padding-bottom: 30%;
 
   img {
     //position: absolute;
@@ -41,13 +49,16 @@
     //margin-left: -70px;
     width: 140px;
     margin-bottom: 30px;
-    margin-top: 13%;
+    margin-top: 20px;
   }
 
   h1{
     text-transform: uppercase;
     @include breakpoint($medium) {
       @include adjust-font-size-to(58px);
+    }
+    @include breakpoint($lt-small) {
+      margin-bottom: 0;
     }
   }
 

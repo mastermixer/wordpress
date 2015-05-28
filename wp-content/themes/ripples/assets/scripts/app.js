@@ -11,7 +11,7 @@
 
                     $('.nav-button').on('click', function() {
                         console.log('hello world');
-                        $('.nav-list').toggleClass('visible');
+                        $('.nav-mobile-wrapper').toggleClass('visible');
                     });
                 }
             };

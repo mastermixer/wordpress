@@ -11,7 +11,7 @@
         FrontPageMenu = function () {
             return {
                 init: function (element) {
-                    console.log('hei FrontPageMenu', Waypoint, Waypoint.Sticky, $('.front-page-nav')[0]);
+                    //console.log('hei FrontPageMenu', Waypoint, Waypoint.Sticky, $('.front-page-nav')[0]);
                     var sticky = new Waypoint.Sticky({
                         element: $('.front-page-nav')[0]
                     });
@@ -23,16 +23,17 @@
                         $(this).attr('id', 'section'+num);
                         var id = $(this).attr('id');
                         console.log(name);
-                        $('.front-page-nav ul').append("<li><a href='#" + id + "'>" + name + "</a></li>");
+                        $('.nav-list').append("<li><a href='#" + id + "'>" + name + "</a></li>");
                         num++;
                         console.log(num);
                     });
 
-                    $('.front-page-nav ul a').click(function(event){
+                    $('.front-page-nav ul a').on('click', function(event){
                         event.preventDefault();
+                        $('.nav-mobile-wrapper').removeClass('visible');
                         var item = $(this).attr('href');
                         $('html, body').animate({
-                            scrollTop: $(item).offset().top - 120
+                            scrollTop: $(item).offset().top - 100
                         }, 500);
 
                     });
