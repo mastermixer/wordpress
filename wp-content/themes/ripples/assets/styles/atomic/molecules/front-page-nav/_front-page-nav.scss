@@ -100,7 +100,13 @@
   .app-buttons {
     position: absolute;
     right: 20px;
-    top: 19px;
+    top: 50%;
+    height: 40px;
+    margin-top: -20px;
+    img {
+      height: 40px;
+      width: auto;
+    }
   }
 }
 
