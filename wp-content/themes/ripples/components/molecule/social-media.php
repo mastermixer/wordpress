@@ -29,11 +29,30 @@ $sharing_googleplus    = sprintf("mailto:?subject=Oiid is fun&body=Tell me more"
 ?>
 
 <div class="share-buttons">
-<h3>Share oiid with your friends</h3>
+    <h2>Share oiid with your friends</h2>
+
+<?php if (is_front_page()) { ?>
+    <ul>
+    <?php while (have_rows('social_media_buttons', 'option')): the_row(); 
+            $shareLink = get_sub_field('share_link');
+            $shareClass = get_sub_field('type'); ?>
+            <li>
+                <a class="<?php echo $shareClass ?>" href="<?php echo $shareLink ; ?>">
+                    <?php echo $shareClass ?>
+                </a>
+            </li>
+    <?php endwhile; ?>
+    </ul>
+
+<?php } else { ?>
+
     <ul>
         <li><a href="<?php echo $sharing_facebook; ?>" class="facebook">Facebook</a></li>
         <li><a href="<?php echo $sharing_twitter; ?>" class="twitter">Twitter</a></li>
         <li><a href="<?php echo $sharing_email; ?>" class="email">Epost</a></li>
         <li><a href="<?php echo $sharing_googleplus; ?>" class="googleplus">Google+</a></li>
     </ul>
+
+<?php } ?>
+
 </div>
