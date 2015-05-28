@@ -11,7 +11,7 @@
         FrontPageMenu = function () {
             return {
                 init: function (element) {
-                    console.log('hei FrontPageMenu');
+                    console.log('hei FrontPageMenu', Waypoint, Waypoint.Sticky, $('.front-page-nav')[0]);
                     var sticky = new Waypoint.Sticky({
                         element: $('.front-page-nav')[0]
                     });
@@ -35,7 +35,7 @@
                             scrollTop: $(item).offset().top - 120
                         }, 500);
 
-                    })
+                    });
                 }
             };
         };
