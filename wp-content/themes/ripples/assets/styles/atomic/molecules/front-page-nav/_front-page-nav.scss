@@ -35,6 +35,24 @@
     position:fixed;
     top:0;
     z-index: 1000;
+
+    ul{
+      li{
+        a{
+          &.active:after {
+            background: $defaultGradient;
+            height: 4px;
+            display: block;
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+          }
+        }
+      }
+    }
+
   }
 
   .nav-mobile-wrapper {
@@ -82,8 +100,8 @@
           font-style: italic;
           text-transform: uppercase;
           position: relative;
-          
-          &:hover:after {
+
+          /*&.active:after {
             background: $defaultGradient;
             height: 4px;
             display: block;
@@ -92,7 +110,8 @@
             bottom: 0;
             left: 10px;
             right: 10px;
-          }
+          }*/
+
         }
       }
     }
