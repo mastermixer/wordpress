@@ -8,13 +8,13 @@
         <div class="article-top"
              style="background-image:url('<?php echo wp_get_attachment_image_src($image, 'full')[0]; ?>')">
 
-            <header class="article-top-header">
+            <div class="article-top-header">
                 <div class="inner-container">
                     <h1 class="entry-title"><?php the_title(); ?></h1>
 
                     <p class="entry-subtitle"><?php the_field('subtitle'); ?></p>
                 </div>
-            </header>
+            </div>
 
         </div>
 
