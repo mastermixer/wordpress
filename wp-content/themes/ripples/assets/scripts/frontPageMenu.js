@@ -1,3 +1,4 @@
+// jshint ignore: start
 /**
  * Author: Peder A. Nielsen
  * Date: 11.05.15
