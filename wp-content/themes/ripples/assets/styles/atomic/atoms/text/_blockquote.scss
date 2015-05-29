@@ -1,11 +1,13 @@
 blockquote{
   color:$blueText;
-  @include adjust-font-size-to(35px);
   border-top: 2px solid $blueText;
   padding-top: 36px;
   margin-top: 36px;
   position: relative;
-
+  @include adjust-font-size-to(24px);
+  @include breakpoint($medium) {
+    @include adjust-font-size-to(35px);
+  }
   &:before{
     content:"";
     background-image: url("../images/quote2.svg");
