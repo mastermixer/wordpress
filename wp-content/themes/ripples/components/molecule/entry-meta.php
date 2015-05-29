@@ -1,2 +1,3 @@
-<time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
-<p class="byline author vcard"><?= __('By', 'ripples'); ?> <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+<p class="byline"><?= __('entryMeta.writtenBy', 'ripples'); ?> <?= get_the_author(); ?></p>
+<time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date('j.m.Y \k\l. H:i'); ?></time>
+
