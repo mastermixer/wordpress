@@ -17,43 +17,48 @@
             </div>
 
         </div>
-
-        <div class="inner-container">
-            <div class="left-col">
-                <div class="entry-intro">
-                    <?php the_excerpt(); ?>
+        <div class="article-main">
+            <div class="inner-container">
+                <div class="left-col">
+                    <div class="entry-intro">
+                        <?php the_excerpt(); ?>
+                    </div>
+                    <div class="entry-content">
+                        <?php the_content(); ?>
+                    </div>
                 </div>
-                <div class="entry-content">
-                    <?php the_content(); ?>
+
+                <div class="right-col">
+                    <?php inc('molecule', 'entry-meta'); ?>
+                    <?php if (have_rows('images')): ?>
+
+                        <?php while (have_rows('images')): the_row();
+                            // vars
+                            $image = get_sub_field('image');
+                            $text = get_sub_field('text', false, false);
+                            ?>
+                            <figure class="figure-with-caption">
+                                <?php echo wp_get_attachment_image($image, 'full'); ?>
+                                <?php if ($text != ''): ?>
+                                    <figcaption class="figure-caption"><?php echo $text; ?></figcaption>
+                                <?php endif; ?>
+                            </figure>
+                        <?php endwhile; ?>
+
+                    <?php endif; ?>
                 </div>
+
+                <!--<footer>
+                <?php /*wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'ripples'), 'after' => '</p></nav>']); */ ?>
+            </footer>-->
+                <?php inc('molecule', 'social-media'); ?>
             </div>
-
-            <div class="right-col">
-                <?php inc('molecule', 'entry-meta'); ?>
-                <?php if (have_rows('images')): ?>
-
-                    <?php while (have_rows('images')): the_row();
-                        // vars
-                        $image = get_sub_field('image');
-                        $text = get_sub_field('text', false, false);
-                        ?>
-                        <figure class="figure-with-caption">
-                            <?php echo wp_get_attachment_image($image, 'full'); ?>
-                            <?php if ($text != ''): ?>
-                                <figcaption class="figure-caption"><?php echo $text; ?></figcaption>
-                            <?php endif; ?>
-                        </figure>
-                    <?php endwhile; ?>
-
-                <?php endif; ?>
-            </div>
-
-            <footer>
-                <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'ripples'), 'after' => '</p></nav>']); ?>
-            </footer>
         </div>
     </article>
 <?php endwhile; ?>
+
+
+
 <?php inc('atom', 'main-end'); ?>
 
 <?php inc('organism', 'explore-oiid'); ?>
@@ -77,6 +82,7 @@ if ($post_objects): ?>
                                 <?php echo get_the_post_thumbnail($post->ID, 'portrait-320') ?>
                                 <div class="post-list-item-text">
                                     <h3><?php echo $post->post_title ?></h3>
+
                                     <p>
                                         <?php // this wp function trims text, in this case the excerpt, to the length we set. This is a simple solution for now.
                                         echo wp_trim_words($post->post_excerpt, 8); ?>
@@ -92,3 +98,4 @@ if ($post_objects): ?>
         </div>
     </section>
 <?php endif; ?>
+

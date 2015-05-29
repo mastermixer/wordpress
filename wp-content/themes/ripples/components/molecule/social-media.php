@@ -29,9 +29,10 @@ $sharing_googleplus    = sprintf("mailto:?subject=Oiid is fun&body=Tell me more"
 ?>
 
 <div class="share-buttons">
-    <h2>Share oiid with your friends</h2>
+
 
 <?php if (is_front_page()) { ?>
+    <h2>Share oiid with your friends</h2>
     <ul>
     <?php while (have_rows('social_media_buttons', 'option')): the_row(); 
             $shareLink = get_sub_field('share_link');

@@ -48,10 +48,10 @@
 
   .entry-subtitle{
     font-size: 2em;
-    line-height: 1.1em;
+    line-height: 1.2em;
     @include breakpoint($medium) {
       font-size: 3.65em;
-      line-height: 1em;
+      line-height: 1.2em;
     }
     color:white;
     margin-bottom: 0;
