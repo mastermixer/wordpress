@@ -46,10 +46,10 @@
                         new Waypoint({
                             element: sections[i],
                             handler: function(direction) {
-                                console.log(this.element.id);
+                               // console.log(this.element.id);
 
                                 if (direction === 'up') {
-                                    console.log('direction:'+direction);
+                                  //  console.log('direction:'+direction);
                                     nav.find('a').removeClass('active');
                                     nav.find('a[href="#' + this.element.id + '"]').addClass('active');
                                 }
@@ -59,10 +59,10 @@
                         new Waypoint({
                             element: sections[i],
                             handler: function(direction) {
-                                console.log(this.element.id);
+                               // console.log(this.element.id);
 
                                 if (direction === 'down') {
-                                    console.log('direction:'+direction);
+                                   // console.log('direction:'+direction);
                                     nav.find('a').removeClass('active');
                                     nav.find('a[href="#' + this.element.id + '"]').addClass('active');
                                 }

@@ -44,7 +44,13 @@ $lt-xlarge: max-width 1439px;
 
 $xlarge: min-width 1440px;
 
-// ==========================================================================
+$low: min-height 600px;
+$normal: min-height 800px;
+$tall: min-height 1000px;
+
+$supertall: min-height 1200px;
+
+  // ==========================================================================
 // Variables
 // ==========================================================================
 
@@ -52,6 +58,7 @@ $xlarge: min-width 1440px;
 $black: #171717 !default;
 $lightBg: #f7f7f7 !default;
 $blue: #40bfe0;
+$blueText: #008FC7;
 $pink: #d11186;
 //ALL SITE COLORS EXCEPT BLACK AND WHITE
 $alphaColor: #2abb9d !default;

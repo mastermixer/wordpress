@@ -1,0 +1,59 @@
+.article-top {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: rhythm(4);
+  @include breakpoint($medium) {
+    margin-bottom: rhythm(10);
+  }
+  height: 400px;
+
+  @include breakpoint($low){
+    height: 500px;
+  }
+
+  @include breakpoint($normal){
+    height: 600px;
+  }
+
+  @include breakpoint($tall){
+    height: 800px;
+  }
+
+  @include breakpoint($supertall){
+    height: 1000px;
+  }
+}
+
+.article-top-header {
+  position: absolute;
+  bottom:rhythm(2);
+  @include breakpoint($medium) {
+    bottom: rhythm(10);
+  }
+  left:0;
+  width: 100%;
+
+  .entry-title{
+    color:$blue;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1.1em;
+    @include breakpoint($medium) {
+      font-size: 1.5em;
+      line-height: 1.1em;
+    }
+  }
+
+  .entry-subtitle{
+    font-size: 2em;
+    line-height: 1.1em;
+    @include breakpoint($medium) {
+      font-size: 3.65em;
+      line-height: 1em;
+    }
+    color:white;
+    margin-bottom: 0;
+  }
+}

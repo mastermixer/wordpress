@@ -1,7 +1,7 @@
 blockquote{
- // color:$blue;
+  color:$blueText;
   @include adjust-font-size-to(35px);
-  border-top: 2px solid $blue;
+  border-top: 2px solid $blueText;
   padding-top: 36px;
   margin-top: 36px;
   position: relative;
