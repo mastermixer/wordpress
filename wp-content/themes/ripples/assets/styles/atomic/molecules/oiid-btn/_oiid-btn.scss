@@ -4,6 +4,8 @@
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
   @include adjust-font-size-to(25px);
   span {
     background-color: $black;
