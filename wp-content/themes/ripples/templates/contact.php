@@ -34,19 +34,7 @@
             </div>
         </div>
 
-        <div class="contact-us-text">
-            <div class="inner-container">
-    
-                <h2><?php the_field('subtitle') ?></h2>
-    
-    
-                <div class="text">
-                    <?php the_field('text') ?>
-                </div>
-            </div>
-        </div>
-
-
+      
 
     </article>
 <?php endwhile; ?>
