@@ -19,10 +19,10 @@ $sharing_linkedin = sprintf("http://www.linkedin.com/shareArticle?title=%s&url=%
     urlencode($sharing_title),
     urlencode($sharing_link)
 );
-$sharing_email    = sprintf("mailto:?subject=Oiid is fun&body=Tell me more",
+$sharing_email    = sprintf("mailto:?subject=Oiid is fun&body=%s",
     urlencode($sharing_link)
 );
-$sharing_googleplus    = sprintf("mailto:?subject=Oiid is fun&body=Tell me more",
+$sharing_googleplus    = sprintf("https://plus.google.com/share?url=%s",
     urlencode($sharing_link)
 );
 
