@@ -17,7 +17,7 @@
             <?php
             $args = array(
                 'post_type' => array('post'),
-                'posts_per_page' => 2
+                'posts_per_page' => -1
             );
             $postsQuery = new WP_Query($args);
 
