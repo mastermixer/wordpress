@@ -44,6 +44,8 @@
 
   @include breakpoint($lt-medium) {
     background-image: none !important;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .page-template-frontpage & {
