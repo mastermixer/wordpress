@@ -55,8 +55,10 @@
 
   .what-is-item-text {
     @include adjust-font-size-to(16px);
+    //line-height: 1.5em;
     @include breakpoint($small) {
       @include adjust-font-size-to(24px);
+      line-height: 1.5em;
     }
   }
 }
