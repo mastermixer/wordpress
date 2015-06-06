@@ -47,10 +47,10 @@
   }
 
   .page-template-frontpage & {
-    @include breakpoint($medium) {
-      padding-top: 60px;
-      vertical-align: top;
-    }
+    // @include breakpoint($medium) {
+    //   padding-top: 60px;
+    //   vertical-align: top;
+    // }
     @include breakpoint($xxlarge) {
       padding-top: 160px;
     }
@@ -75,6 +75,7 @@
     text-transform: uppercase;
     @include breakpoint($medium) {
       @include adjust-font-size-to(58px);
+      margin-bottom: 5px;
     }
     @include breakpoint($lt-small) {
       margin-bottom: 0;
