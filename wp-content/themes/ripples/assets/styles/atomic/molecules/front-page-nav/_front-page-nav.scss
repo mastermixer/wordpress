@@ -8,6 +8,7 @@
       position: fixed;
       top: 0;
       z-index: 1000;
+      height: 60px;
   }
 
   .nav-button {
@@ -61,7 +62,7 @@
     @include breakpoint($lt-medium) {
       display: none;
       position: fixed;
-      top: 100px;
+      top: 60px;
       min-height: 500px;
       left: 0;
       right: 0;
