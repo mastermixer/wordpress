@@ -3,7 +3,7 @@
   background-color: $black;
 
   .page-template-frontpage & {
-    margin-top: 100px;
+    margin-top: 60px;
     height: 400px;
     @include breakpoint($medium) {
       height: calc(100% - 100px);
