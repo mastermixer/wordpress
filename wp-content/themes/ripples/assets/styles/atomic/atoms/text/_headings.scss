@@ -6,7 +6,7 @@
     font-family: fontFamily(h#{$i});
     font-weight: fontWeight(h#{$i});
     font-style: fontStyle(h#{$i});
-    text-transform: uppercase;
+    //text-transform: uppercase;
     @include adjust-font-size-to($to-size: $size);
     @include trailer(3, $size);
   }
