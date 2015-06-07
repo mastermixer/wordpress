@@ -72,7 +72,8 @@ if ($post_objects): ?>
         <div class="inner-container">
             <div class="section-intro center-text">
                 <h2 class="section-title"><?php the_field('connected_title'); ?></h2>
-
+            </div>
+            <div>
                 <ul class="post-list">
                     <?php foreach ($post_objects as $post): // variable must be called $post (IMPORTANT) ?>
                         <?php //setup_postdata($post); ?>
