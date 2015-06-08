@@ -32,7 +32,7 @@ $sharing_googleplus    = sprintf("https://plus.google.com/share?url=%s",
 
 
 <?php if (is_front_page()) { ?>
-    <h2>Share oiid with your friends</h2>
+    <h3>Share oiid with your friends</h3>
     <ul>
     <?php while (have_rows('social_media_buttons', 'option')): the_row(); 
             $shareLink = get_sub_field('share_link');
