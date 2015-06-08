@@ -107,7 +107,7 @@
 	}
 
 	.gform_footer {
-		background-color: red;
+		//background-color: red;
 		display: inline-block;
 		padding: 4px;
 		background: $defaultGradient;
@@ -125,4 +125,11 @@
 			font-style: italic;
 		}
 	}
+
+	.gform_confirmation_wrapper {
+		color: white;
+		text-align: center;
+		font-size: 2.3em;
+	}
+
 }
