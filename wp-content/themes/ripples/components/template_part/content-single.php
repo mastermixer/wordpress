@@ -61,7 +61,7 @@
 
 <?php inc('atom', 'main-end'); ?>
 
-<?php //inc('organism', 'explore-oiid'); ?>
+<?php inc('organism', 'explore-oiid'); ?>
 
 <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 
