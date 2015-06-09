@@ -30,7 +30,7 @@
 </article>
 
 <?php inc('atom', 'main-end'); ?>
-<?php inc('organism', 'explore-oiid'); ?>
+<?php //inc('organism', 'explore-oiid'); ?>
 
 
 
