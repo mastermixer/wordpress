@@ -24,7 +24,7 @@
 	            <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'ripples'), 'after' => '</p></nav>']); ?>
 	        </div>
 
-	        <?php inc('molecule', 'social-media'); ?>
+	        <?php //inc('molecule', 'social-media'); ?>
 	    </div>
 	</div>
 </article>
