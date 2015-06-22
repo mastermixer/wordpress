@@ -37,7 +37,7 @@
   }
 
   .validation_message {
-    color: $pink;
+    color:lighten($pink, 10%);;
     display: block;
   }
 
@@ -152,9 +152,10 @@
 }
 
 .gform_wrapper div.validation_error {
-  color:$pink;
+  color:lighten($pink, 10%);
   text-align: center;
   border:none;
+
 }
 
 
