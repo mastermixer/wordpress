@@ -1,136 +1,164 @@
 .contact-us-text {
-	text-align: center;
-	padding: 40px 0;
-	h2 {
-		font-size: 34px;
-		color: black;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-style: italic;
-	}
-	p {
-		font-size: 20px;
-	}
+  text-align: center;
+  padding: 40px 0;
+  h2 {
+    font-size: 34px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+  }
+  p {
+    font-size: 20px;
+  }
 }
 
 .contact-form {
-	padding: 40px 0;
-	background-color: black;
+  padding: 40px 0;
+  background-color: black;
 
-	.validation_error {
-		color: white;
-	}
+  .validation_error {
+    color: white;
+  }
 
-	.gform_wrapper {
-		max-width: 500px;
-		margin: 0 auto;
-	}
+  .gform_wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-	.gfield_label {
-		//display: none;
-		@extend %is-vishidden;
-	}
+  .gfield_label {
+    //display: none;
+    @extend %is-vishidden;
+  }
 
-	.gfield_description {
-		display: none;
-		//@extend %is-vishidden;
-	}
+  .gfield_description {
+    display: none;
+    //@extend %is-vishidden;
+  }
 
-	.validation_message {
-		color: red;
-		display: block;
-	}
+  .validation_message {
+    color: $pink;
+    display: block;
+  }
 
-	.ginput_container {
-		//background: $defaultGradient;
-		padding: 0;
-		margin-top: 10px;
-		position: relative;
+  .ginput_container {
+    //background: $defaultGradient;
+    padding: 0;
+    margin-top: 10px;
+    position: relative;
 
-		&:after {
-			content: " ";
-			height: 2px;
-			width: 100%;
-			background-color: blue;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: $defaultGradient;
+    &:after {
+      content: " ";
+      height: 2px;
+      width: 100%;
+      background-color: $blue;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $defaultGradient;
 
-		}
+    }
 
-		input, 
-		textarea {
-			width: 100%;
-			background-color: black;
-			border: 1px solid black;
-			-webkit-appearance: none;
-			color: white;
-			font-family: "GT-walsheim";
-			font-size: 18px;
+    input,
+    textarea {
+      width: 100%;
+      background-color: black;
+      border: 1px solid black;
+      -webkit-appearance: none;
+      color: white;
+      font-family: "GT-walsheim";
+      font-size: 18px;
 
-			&:focus {
-				outline: none;
-			}
-			&::-webkit-input-placeholder {
-			   color: white;
-			}
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        color: white;
+      }
 
-			&:-moz-placeholder {
-			   color: white;  
-			}
+      &:-moz-placeholder {
+        color: white;
+      }
 
-			&::-moz-placeholder { 
-			   color: white;  
-			}
+      &::-moz-placeholder {
+        color: white;
+      }
 
-			&:-ms-input-placeholder {  
-			   color: white;  
-			}
-		}
+      &:-ms-input-placeholder {
+        color: white;
+      }
+    }
 
-		input[type=text] {
-			height: 50px;
-		}
+    input[type=text] {
+      height: 50px;
+      width: 100%;
+    }
 
-		textarea {
-			margin-bottom: 0;
-			height: 100px;
-			margin-top: 10px;
-		}
+    textarea {
+      margin-bottom: 0;
+      height: 100px;
+      margin-top: 10px;
+    }
 
-	}
+  }
 
-	.gform_body {
-		//border: 1px solid white;
-		margin-bottom: 10px;
-	}
+  .gform_body {
+    //border: 1px solid white;
+    margin-bottom: 10px;
+  }
 
-	.gform_footer {
-		//background-color: red;
-		display: inline-block;
-		padding: 4px;
-		background: $defaultGradient;
+  .gform_footer {
+    //background-color: red;
+    display: inline-block;
+    padding: 4px;
+    background: $defaultGradient;
 
-		input {
-			background-color: black;
-			padding: 10px 30px;
-			color: white;
-			-webkit-appearance: none;
-			border: 1px solid black;
-			font-size: 25px;
-			text-transform: uppercase;
-			font-family: "GT-walsheim";
-			font-weight: 700;
-			font-style: italic;
-		}
-	}
 
-	.gform_confirmation_wrapper {
-		color: white;
-		text-align: center;
-		font-size: 2.3em;
-	}
+    input {
+      background-color: black;
+      padding: 10px 30px;
+      color: white;
+      -webkit-appearance: none;
+      border: 1px solid black;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: "GT-walsheim";
+      font-weight: 700;
+      font-style: italic;
+      cursor: pointer;
+    }
+  }
+
+  .gform_confirmation_wrapper {
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+  }
+
+}
+
+.gform_wrapper li.gfield_error input[type=text] {
+  border: none;
+}
+
+.gform_wrapper .top_label input.medium {
+  width: 100%;
+}
+
+.gform_wrapper li.gfield.gfield_error {
+  background: transparent;
+  border: none;
+}
+
+.gform_wrapper div.validation_error {
+  color:$pink;
+  text-align: center;
+  border:none;
+}
+
+
+.gform_wrapper .ginput_container+.gfield_description.validation_message {
+  margin-top:0;
 
 }
