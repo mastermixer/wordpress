@@ -80,3 +80,14 @@ function custom_mce_before_init( $settings ) {
 	$settings['style_formats'] = json_encode( $style_formats );
 	return $settings;
 }
+
+function ctaButton($atts, $content = 'button name') {
+	extract(shortcode_atts(array(
+      'href' => '/',
+   	), $atts));
+
+	$return_string = '<div class="oiid-btn"><a href="' . $href . '"><span>' . $content . '</span></a>';
+	$return_string .= '</div>';
+	return $return_string;
+}
+add_shortcode('cta-button', __NAMESPACE__ . '\\ctaButton');
