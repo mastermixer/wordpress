@@ -91,3 +91,28 @@ function ctaButton($atts, $content = 'button name') {
 	return $return_string;
 }
 add_shortcode('cta-button', __NAMESPACE__ . '\\ctaButton');
+
+function register_button( $buttons ) {
+   array_push( $buttons, "|", "ctabutton" );
+   return $buttons;
+}
+
+function add_plugin( $plugin_array ) {
+   $plugin_array['ctabutton'] = get_template_directory_uri() . '/assets/scripts/cta-button.js';
+   //echo $plugin_array['ctabutton'];
+   return $plugin_array;
+}
+
+function make_cta_button() {
+
+   if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') ) {
+      return;
+   }
+
+   if ( get_user_option('rich_editing') == 'true' ) {
+      add_filter( 'mce_external_plugins', __NAMESPACE__ . '\\add_plugin' );
+      add_filter( 'mce_buttons', __NAMESPACE__ . '\\register_button' );
+   }
+
+}
+add_action('init', __NAMESPACE__ . '\\make_cta_button');
