@@ -1,8 +1,6 @@
 (function() {
-   console.log('hello plugin');
    tinymce.create('tinymce.plugins.ctabutton', {
       init : function(ed, url) {
-         console.log(url);
          ed.addButton('ctabutton', {
             title : 'CTA button',
             text : 'CTA button',
