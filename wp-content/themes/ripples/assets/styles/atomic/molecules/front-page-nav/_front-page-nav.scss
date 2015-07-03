@@ -68,7 +68,7 @@
       right: 0;
       bottom: 0;
       z-index: 1000;
-      background: white;
+      background: rgba(0,0,0,.8);
       text-align: center;
       &.visible {
         display: block;
@@ -112,6 +112,12 @@
             left: 10px;
             right: 10px;
           }*/
+          @include breakpoint($lt-medium) {
+            color: white;
+            font-size: 30px;
+            padding: 5px;
+            margin: 30px 0 0;
+          }
 
         }
       }
