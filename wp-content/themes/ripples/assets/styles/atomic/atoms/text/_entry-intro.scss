@@ -1,5 +1,5 @@
 .entry-intro {
-  @include adjust-font-size-to(18px);
+  @include adjust-font-size-to(16px);
   @include breakpoint($small) {
     @include adjust-font-size-to(28px);
   }
