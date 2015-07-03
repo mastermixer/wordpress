@@ -13,9 +13,21 @@
   }
 }
 
+
 .contact-form {
   padding: 40px 0;
   background-color: black;
+
+  .article-main & {
+    padding: 20px;
+    ul {
+      margin-left: 0;
+    }
+    .gform_title {
+      margin: 0;
+      color: white;
+    }
+  }
 
   .validation_error {
     color: white;
