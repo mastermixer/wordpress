@@ -9,14 +9,14 @@
                var href = prompt("Url", "/");
                var text = prompt("Text", "Default button");
 
-               if (text != null && text != ''){
-                  if (href != null && href != '')
+               if (text !== null && text !== ''){
+                  if (href !== null && href !== '')
                      ed.execCommand('mceInsertContent', false, '[cta-button href="'+href+'"]'+text+'[/cta-button]');
                   else
                      ed.execCommand('mceInsertContent', false, '[cta-button]'+text+'[/cta-button]');
                }
                else{
-                  if (href != null && href != '')
+                  if (href !== null && href !== '')
                      ed.execCommand('mceInsertContent', false, '[cta-button posts="'+href+'"]');
                   else
                      ed.execCommand('mceInsertContent', false, '[cta-button]');
